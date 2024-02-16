@@ -321,22 +321,62 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-{% if site.carpentry == "swc" %}
-{% include swc/schedule.html %}
-{% elsif site.carpentry == "dc" %}
-{% include dc/schedule.html %}
-{% elsif site.carpentry == "lc" %}
-{% include lc/schedule.html %}
-{% elsif site.carpentry == "incubator" %}
-This workshop is teaching a lesson in [The Carpentries Incubator](https://carpentries-incubator.org/).
-Please check [the lesson homepage]({{ site.incubator_lesson_site }}) for a list of lesson sections and estimated timings.
-{% endif %}
-
-{% comment %}
-Edit/replace the text above if you want to include a schedule table.
-See the contents of the _includes/custom-schedule.html file for an example of
-how one of these schedule tables is constructed.
-{% endcomment %}
+<div class="row">        <!-- first two days -->
+  <div class="col-md-6"> <!-- left column -->
+    <h3>Day 1 - March 07</h3>
+    <table class="table table-striped">
+      <tr>               <!-- row 1   -->
+        <td>Before starting</td>
+        <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
+      </tr>
+      <tr>               <!-- row 2   -->
+        <td>10:00am - 10:30am</td>        <!-- time    -->
+        <td>Workshop Introduction</td>        <!-- content -->
+      </tr>
+      <tr>               <!-- row 3   -->
+        <td>10:30am - 12:00pm</td>        <!-- time    -->
+        <td>Python for Social Scientists: Introduction to Python, Starting with Data</td>        <!-- content -->
+      </tr>
+      <tr>               <!-- row 4   -->
+        <td>12:00pm - 1:00pm</td>        <!-- time    -->
+        <td>Lunch</td>        <!-- content -->
+      </tr>
+     <tr>               <!-- row 5   -->
+        <td>1:00pm - 3:30pm</td>        <!-- time    -->
+        <td>Python for Social Scientists: Indexing, Slicing and Subsetting DataFrames in Python, Data Types and Formats</td>        <!-- content -->
+      </tr>
+     <tr>               <!-- row 3   -->
+        <td>4:00pm - 7:00pm</td>        <!-- time    -->
+        <td>Panel & Reception</td>        <!-- content -->
+      </tr>
+    </table>
+  </div>
+  <div class="col-md-6"> <!-- right column -->
+    <h3>Day 2 - March 08</h3>
+    <table class="table table-striped">
+      <tr>               <!-- row 1   -->
+        <td>10:00am - 10:15am</td>        <!-- time    -->
+        <td></td>        <!-- content -->
+      </tr>
+      <tr>               <!-- row 2   -->
+        <td>10:15am - 12:00pm</td>        <!-- time    -->
+        <td>Data Ingest and Visualization</td>        <!-- content -->
+      </tr>
+      <tr>               <!-- row 3   -->
+        <td>12:00pm - 1:00pm</td>        <!-- time    -->
+        <td>Lunch</td>        <!-- content -->
+      </tr>
+      <tr>               <!-- row 2   -->
+        <td>1:00pm - 3:30pm</td>        <!-- time    -->
+        <td>Data Workflows and Automation, Review, Next Steps</td>        <!-- content -->
+      </tr>
+      <tr>               <!-- row 2   -->
+        <td>3:30pm - 4:00pm</td>        <!-- time    -->
+        <td>Wrap-up / Q&A</td>        <!-- content -->
+      </tr>
+    </table>
+  </div>
+</div>
 
 {% if site.pilot %}
 The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you would like more information about the planned schedule.
