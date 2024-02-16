@@ -13,7 +13,7 @@ humandate: "March 7-8, 2024"
 humantime: "10:00 am - 4:00 pm ET"
 startdate: 2024-03-07
 enddate: 2024-03-08
-instructor: ["Ramirez Salas Ruben", "Xinyu Xie", "Hao Ye"]
+instructor: ["Ruben Ramirez Salas", "Xinyu Xie", "Hao Ye"]
 helper: ["Lauren", "Stephen", "Ben", "Girmaye"]
 email: ["libraryrdds@pobox.upenn.edu"]
 # collaborative_notes: 
