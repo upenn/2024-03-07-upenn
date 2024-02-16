@@ -31,6 +31,12 @@ It looks like you are setting up a website for a Data Carpentry curriculum but y
 {% endunless %}
 {% endif %}
 
+<p class="text-center">
+  <a href="https://forms.office.com/pages/responsepage.aspx?id=nZRNbBy5RUyarmbXZEMRDRIPDyJcUtJGriDLxh8VldJUQUtLVEJCUVdWTTNSSVlUM1ZKUjVMWVY4WSQlQCN0PWcu">
+    <button type="button" class="btn btn-info">Register</button>
+  </a>
+</p>
+
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -325,10 +331,6 @@ of code below the Schedule `<h2>` header below with
   <div class="col-md-6"> <!-- left column -->
     <h3>Day 1 - March 07</h3>
     <table class="table table-striped">
-      <tr>               <!-- row 1   -->
-        <td>Before starting</td>
-        <td><a href="{{ site.pre_survey }}{{ site.github.project_title }}" target="_blank">Pre-workshop survey</a></td>
-      </tr>
       <tr>               <!-- row 2   -->
         <td>10:00am - 10:30am</td>        <!-- time    -->
         <td>Workshop Introduction</td>        <!-- content -->
