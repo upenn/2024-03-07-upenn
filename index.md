@@ -356,11 +356,11 @@ of code below the Schedule `<h2>` header below with
     <table class="table table-striped">
       <tr>               <!-- row 1   -->
         <td>10:00am - 10:15am</td>        <!-- time    -->
-        <td></td>        <!-- content -->
+        <td>Welcome back</td>        <!-- content -->
       </tr>
       <tr>               <!-- row 2   -->
         <td>10:15am - 12:00pm</td>        <!-- time    -->
-        <td>Data Ingest and Visualization</td>        <!-- content -->
+        <td>Python for Social Scientists: ata Ingest and Visualization</td>        <!-- content -->
       </tr>
       <tr>               <!-- row 3   -->
         <td>12:00pm - 1:00pm</td>        <!-- time    -->
@@ -368,7 +368,7 @@ of code below the Schedule `<h2>` header below with
       </tr>
       <tr>               <!-- row 2   -->
         <td>1:00pm - 3:30pm</td>        <!-- time    -->
-        <td>Data Workflows and Automation, Review, Next Steps</td>        <!-- content -->
+        <td>Python for Social Scientists: Data Workflows and Automation, Review, Next Steps</td>        <!-- content -->
       </tr>
       <tr>               <!-- row 2   -->
         <td>3:30pm - 4:00pm</td>        <!-- time    -->
