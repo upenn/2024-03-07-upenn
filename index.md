@@ -14,7 +14,7 @@ humantime: "10:00 am - 4:00 pm ET"
 startdate: 2024-03-07
 enddate: 2024-03-08
 instructor: ["Ruben Ramirez Salas", "Xinyu Xie", "Hao Ye"]
-helper: ["Lauren", "Stephen", "Ben", "Girmaye"]
+helper: ["Cynthia Heider, Public Digital Scholarship Librarian", "Stephen Hall, Computer Science Librarian, "Girmaye Misgna, Mapping & Geospatial Data Librarian", "Lauren Phegley, Research Data Manager", "Ben Liebersohn, Geospatial and Mapping Fellow", "Andy Janco, Research Software Engineer"]
 email: ["libraryrdds@pobox.upenn.edu"]
 # collaborative_notes: 
 ---
@@ -193,6 +193,16 @@ CONTACT EMAIL ADDRESS
 
 Display the contact email address set in the configuration file.
 {% endcomment %}
+
+<p id="hosts">
+  <strong>Hosts:</strong>
+  <ul>
+    <li>Jaj Karajgikar (Research Data and Digital Scholarship)</li>
+    <li>Lynda Kellam (Research Data and Digital Scholarship)</li>
+    <li>JoEllen McBride (Penn Grad Center)</li>
+  </ul>
+ </p>
+
 <p id="contact">
   <strong>Contact:</strong>
   Please email
@@ -211,12 +221,6 @@ Display the contact email address set in the configuration file.
   to-be-announced
   {% endif %}
   for more information.
-</p>
-
-<p id="roles">
-  <strong>Roles:</strong>
-  To learn more about the roles at the workshop (who will be doing what),
-  refer to <a href="https://carpentries.org/workshop_faq/#what-are-the-roles-of-everyone-participating-in-a-workshop">our Workshop FAQ</a>.
 </p>
 
 {% comment %}
@@ -331,77 +335,9 @@ of code below the Schedule `<h2>` header below with
 
 <h2 id="schedule">Schedule</h2>
 
-<div class="row">        <!-- first two days -->
-  <div class="col-md-6"> <!-- left column -->
-    <h3>Day 1 - March 07</h3>
-    <table class="table table-striped">
-      <tr>               <!-- row 2   -->
-        <td>10:00am - 10:30am</td>        <!-- time    -->
-        <td>Workshop Introduction</td>        <!-- content -->
-      </tr>
-      <tr>               <!-- row 3   -->
-        <td>10:30am - 12:00pm</td>        <!-- time    -->
-        <td>Python for Social Scientists: Introduction to Python, Starting with Data</td>        <!-- content -->
-      </tr>
-      <tr>               <!-- row 4   -->
-        <td>12:00pm - 1:00pm</td>        <!-- time    -->
-        <td>Lunch</td>        <!-- content -->
-      </tr>
-     <tr>               <!-- row 5   -->
-        <td>1:00pm - 3:30pm</td>        <!-- time    -->
-        <td>Python for Social Scientists: Indexing, Slicing and Subsetting DataFrames in Python, Data Types and Formats</td>        <!-- content -->
-      </tr>
-     <tr>               <!-- row 3   -->
-        <td>4:00pm - 7:00pm</td>        <!-- time    -->
-        <td>Panel & Reception</td>        <!-- content -->
-      </tr>
-    </table>
-  </div>
-  <div class="col-md-6"> <!-- right column -->
-    <h3>Day 2 - March 08</h3>
-    <table class="table table-striped">
-      <tr>               <!-- row 1   -->
-        <td>10:00am - 10:15am</td>        <!-- time    -->
-        <td>Welcome back</td>        <!-- content -->
-      </tr>
-      <tr>               <!-- row 2   -->
-        <td>10:15am - 12:00pm</td>        <!-- time    -->
-        <td>Python for Social Scientists: ata Ingest and Visualization</td>        <!-- content -->
-      </tr>
-      <tr>               <!-- row 3   -->
-        <td>12:00pm - 1:00pm</td>        <!-- time    -->
-        <td>Lunch</td>        <!-- content -->
-      </tr>
-      <tr>               <!-- row 2   -->
-        <td>1:00pm - 3:30pm</td>        <!-- time    -->
-        <td>Python for Social Scientists: Data Workflows and Automation, Review, Next Steps</td>        <!-- content -->
-      </tr>
-      <tr>               <!-- row 2   -->
-        <td>3:30pm - 4:00pm</td>        <!-- time    -->
-        <td>Wrap-up / Q&A</td>        <!-- content -->
-      </tr>
-    </table>
-  </div>
-</div>
-
-{% if site.pilot %}
-The lesson taught in this workshop is being piloted and a precise schedule is yet to be established. The workshop will include regular breaks. Please [contact the workshop organisers](#contact) if you would like more information about the planned schedule.
-{% endif %}
+{% include custom-schedule.html %}
 
 <hr/>
-
-
-{% comment %}
-SETUP
-
-Delete irrelevant sections from the setup instructions.  Each
-section is inside a 'div' without any classes to make the beginning
-and end easier to find.
-
-This is the other place where people frequently make mistakes, so
-please preview your site before committing, and make sure to run
-'tools/check' as well.
-{% endcomment %}
 
 <h2 id="setup">Setup</h2>
 
@@ -423,25 +359,6 @@ please preview your site before committing, and make sure to run
   that may be useful on the
   <a href = "{{site.swc_github}}/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
-{% comment %}
-For online workshops, the section below provides:
-- installation instructions for the Zoom client
-- recommendations for setting up Learners' workspace so they can follow along
-  the instructions and the videoconferencing
-
-If you do not use Zoom for your online workshop, edit the file
-`_includes/install_instructions/videoconferencing.html`
-to include the relevant installation instructions.
-{% endcomment %}
-{% if online != "false" %}
-{% include install_instructions/videoconferencing.html %}
-{% endif %}
-
-{% comment %}
-These are the installation instructions for the tools used
-during the workshop.
-{% endcomment %}
 
 {% if site.carpentry == "swc" %}
 {% include swc/setup.html %}
