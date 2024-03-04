@@ -16,7 +16,7 @@ enddate: 2024-03-08
 instructor: ["Ruben Ramirez Salas", "Xinyu Xie", "Hao Ye"]
 helper: ["Cynthia Heider, Public Digital Scholarship Librarian", "Stephen Hall, Computer Science Librarian", "Girmaye Misgna, Mapping and Geospatial Data Librarian", "Lauren Phegley, Research Data Manager", "Ben Liebersohn, Geospatial and Mapping Fellow", "Andy Janco, Research Software Engineer"]
 email: ["libraryrdds@pobox.upenn.edu"]
-# collaborative_notes: 
+collaborative_notes: https://pad.carpentries.org/2024-03-07-upenn
 ---
 
 {% comment %}
